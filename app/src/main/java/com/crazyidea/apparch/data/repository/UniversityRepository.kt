@@ -1,20 +1,15 @@
 package com.crazyidea.apparch.data.repository
 
 import com.crazyidea.apparch.data.dataSource.UniversitiesRemoteDataSource
-import com.crazyidea.apparch.model.MessageResponse
+import com.crazyidea.apparch.model.Resource
+import com.crazyidea.apparch.model.Status
 import com.crazyidea.apparch.model.University
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import javax.inject.Inject
 
 class UniversityRepository @Inject constructor(

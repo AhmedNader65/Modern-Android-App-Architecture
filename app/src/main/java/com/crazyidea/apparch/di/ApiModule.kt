@@ -58,9 +58,4 @@ class ApiModule {
             .baseUrl(BASE_URL)
             .client(okHttpClient)
             .build()
-
-//    @Provides
-//    @Singleton
-//    fun provideGlobalPreference(@ApplicationContext context: Context): GlobalPreferences =
-//        GlobalPreferences(context)
 }

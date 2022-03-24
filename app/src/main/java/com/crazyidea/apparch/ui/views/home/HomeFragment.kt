@@ -1,7 +1,6 @@
 package com.crazyidea.apparch.ui.views.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
@@ -9,12 +8,13 @@ import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.crazyidea.apparch.R
-import com.crazyidea.apparch.data.repository.Status
+import com.crazyidea.apparch.model.Status
 import com.crazyidea.apparch.databinding.FragmentHomeBinding
 import com.crazyidea.apparch.withSimpleAdapter
 import dagger.hilt.android.AndroidEntryPoint

@@ -1,7 +1,6 @@
 package com.crazyidea.apparch.adapter
 
 import android.view.ViewGroup
-import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 
 

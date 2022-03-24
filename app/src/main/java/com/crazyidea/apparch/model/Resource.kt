@@ -1,4 +1,4 @@
-package com.crazyidea.apparch.data.repository
+package com.crazyidea.apparch.model
 
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
