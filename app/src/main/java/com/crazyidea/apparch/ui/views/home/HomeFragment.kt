@@ -66,28 +66,5 @@ class HomeFragment : Fragment() {
                 }
             }
         }
-//        viewModel.uniList.observe(viewLifecycleOwner) { it ->
-//            when (it.status) {
-//                Status.SUCCESS -> {
-//                    binding.loading.visibility = GONE
-//                    it.data?.let { data ->
-//                        binding.list.withSimpleAdapter(data, R.layout.item_university) {
-//                            val countryTV = itemView.findViewById<TextView>(R.id.country)
-//                            val uniTV = itemView.findViewById<TextView>(R.id.universityName)
-//                            uniTV.text = it.name
-//                            countryTV.text = it.country
-//                        }
-//                    }
-//                }
-//                Status.LOADING -> {
-//                    binding.loading.visibility = VISIBLE
-//                }
-//                Status.ERROR -> {
-//                    binding.loading.visibility = GONE
-//                    Toast.makeText(context, it.message, Toast.LENGTH_SHORT).show()
-//
-//                }
-//            }
-//        }
     }
 }
