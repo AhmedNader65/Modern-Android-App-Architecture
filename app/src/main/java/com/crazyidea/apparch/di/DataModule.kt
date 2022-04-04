@@ -21,8 +21,8 @@ class DataModule {
 
     @Provides
     @Singleton
-    fun provideUniversitiesRemoteDataSource(universitiesApi: UniversitiesApi,retrofit: Retrofit) =
-        UniversitiesRemoteDataSource(universitiesApi, retrofit )
+    fun provideUniversitiesRemoteDataSource(universitiesApi: UniversitiesApi) =
+        UniversitiesRemoteDataSource(universitiesApi )
 
     @Provides
     @Singleton

@@ -12,13 +12,11 @@ import javax.inject.Inject
 
 class UniversitiesRemoteDataSource  @Inject constructor(
      private val universitiesApi: UniversitiesApi,
-     private val retrofit: Retrofit
 ) {
 
     suspend fun fetchUniversities(country: String): Resource<List<University>>? {
-        val universitiesService = retrofit.create(UniversitiesApi::class.java);
         return getResponse(
-            request = { universitiesService.fetchUniversities(country)},
+            request = { universitiesApi.fetchUniversities(country)},
             defaultErrorMessage = "Error fetching Universities list")
     }
     private suspend fun <T> getResponse(request: suspend () ->  Response<T>, defaultErrorMessage: String): Resource<T> {
